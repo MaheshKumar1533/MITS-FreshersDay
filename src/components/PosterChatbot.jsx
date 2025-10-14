@@ -5,12 +5,12 @@ const PosterChatbot = ({ show, onClose }) => {
   if (!show) return null;
 
   const eventHighlights = [
-    { icon: '🎤', text: 'Vocal Showdown & Dance Battle' },
-    { icon: '👑', text: 'Mr & Ms Fresher Contest' },
-    { icon: '🎨', text: 'Cultural Fiesta Extravaganza' },
-    { icon: '🎮', text: 'Tech Challenge Arena' },
-    { icon: '🎁', text: 'Amazing Prizes & Exclusive Gifts' },
-    { icon: '✨', text: 'Surprise Celebrity Performances' }
+    { icon: '💪', text: 'Tug of War & Sports Events' },
+    { icon: '🏏', text: 'Cricket, Throw Ball & Shotput' },
+    { icon: '�', text: 'Drama Delites & Fashion Fanatics' },
+    { icon: '�', text: 'Beat Bash & Melody Madness' },
+    { icon: '�', text: 'Artistry & Insta Flick' },
+    { icon: '♟️', text: 'Chess & Carroms Tournaments' }
   ];
 
   return (
@@ -81,7 +81,7 @@ const PosterChatbot = ({ show, onClose }) => {
                   </div>
                   <div className="flex items-center gap-2 glass-effect px-3 py-1 rounded-full">
                     <MapPin className="w-4 h-4 text-purple-400" />
-                    <span className="text-white text-sm font-medium">MITS Campus</span>
+                    <span className="text-white text-sm font-medium">Open Auditorium</span>
                   </div>
                 </div>
               </div>
@@ -134,20 +134,20 @@ const PosterChatbot = ({ show, onClose }) => {
                 </h4>
                 <div className="grid grid-cols-2 gap-3 text-sm">
                   <div className="text-center">
-                    <span className="text-pink-400 font-semibold">� Live DJ</span>
-                    <p className="text-gray-400">Non-stop music</p>
+                    <span className="text-pink-400 font-semibold">🏆 12 Events</span>
+                    <p className="text-gray-400">Multiple categories</p>
                   </div>
                   <div className="text-center">
                     <span className="text-cyan-400 font-semibold">📸 Photo Booth</span>
                     <p className="text-gray-400">Capture memories</p>
                   </div>
                   <div className="text-center">
-                    <span className="text-purple-400 font-semibold">� Food & Drinks</span>
-                    <p className="text-gray-400">Complimentary</p>
+                    <span className="text-purple-400 font-semibold">🏅 Prizes</span>
+                    <p className="text-gray-400">For all winners</p>
                   </div>
                   <div className="text-center">
-                    <span className="text-yellow-400 font-semibold">🎁 Goody Bags</span>
-                    <p className="text-gray-400">For everyone</p>
+                    <span className="text-yellow-400 font-semibold">� Fun & Glory</span>
+                    <p className="text-gray-400">Unforgettable</p>
                   </div>
                 </div>
               </div>

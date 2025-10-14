@@ -84,7 +84,7 @@ const Hero = ({ onPosterClick }) => {
           </div>
           <div className="flex items-center gap-2 glass-effect px-3 sm:px-4 py-2 rounded-full">
             <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-pink-400" />
-            <span className="text-white font-medium">MITS Campus</span>
+            <span className="text-white font-medium">Open Auditorium, Opp. Shiva Block</span>
           </div>
         </div>
 

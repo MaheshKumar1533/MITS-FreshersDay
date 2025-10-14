@@ -22,9 +22,9 @@ const About = () => {
           </h2>
           <div className="w-16 sm:w-20 md:w-24 h-1 bg-gradient-to-r from-pink-500 to-cyan-500 mx-auto mb-6 sm:mb-8"></div>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 max-w-2xl sm:max-w-3xl md:max-w-4xl mx-auto leading-relaxed px-4">
-            Get ready for the most <span className="text-pink-400 font-semibold">electrifying celebration</span> of the year!
-            MITS Freshers Day 2K25 is not just an event – it's a <span className="text-cyan-400 font-semibold">spectacular experience</span>
-            that will welcome our newest family members with unforgettable memories, stunning performances, and pure excitement.
+            Get ready for the most <span className="text-pink-400 font-semibold">spectacular celebration</span> of the year!
+            MITS Freshers Day 2K25 brings you an exciting lineup of <span className="text-cyan-400 font-semibold">12 amazing events</span>
+            – from sports tournaments to cultural performances, fashion shows to artistic competitions. Welcome to your new family!
           </p>
         </div>
 
@@ -32,17 +32,17 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
           {[
             {
-              icon: Award,
-              title: 'Mr & Ms Fresher',
-              description: 'Compete for the prestigious crown and showcase your unique talents on the grand stage',
+              icon: Music,
+              title: 'Cultural Extravaganza',
+              description: 'Experience mind-blowing performances, diverse cultures, and artistic expressions',
               color: 'from-pink-500 to-rose-500',
               bgColor: 'bg-pink-500/10',
               delay: '0s'
             },
             {
-              icon: Music,
-              title: 'Cultural Extravaganza',
-              description: 'Experience mind-blowing performances, diverse cultures, and artistic expressions',
+              icon: Award,
+              title: 'Sports Championship',
+              description: 'Step up, play hard, and claim the crown as the champions of this year’s fresher games!',
               color: 'from-purple-500 to-indigo-500',
               bgColor: 'bg-purple-500/10',
               delay: '0.2s'
@@ -50,7 +50,7 @@ const About = () => {
             {
               icon: Zap,
               title: 'High-Energy Entertainment',
-              description: 'Dance battles, live music, interactive games, and surprises that will blow your mind',
+              description: 'Dance battles, live music, and surprises that will blow your mind',
               color: 'from-cyan-500 to-blue-500',
               bgColor: 'bg-cyan-500/10',
               delay: '0.4s'

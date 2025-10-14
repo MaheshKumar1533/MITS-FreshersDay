@@ -35,14 +35,19 @@ const Contact = () => {
     },
     {
       icon: Phone,
-      title: 'Call Us',
-      details: ['+91 8571234567', '+91 8571234568'],
+      title: 'Event Coordinators',
+      details: [
+        'V. Harshavardhan: +91 76708 22609',
+        'P. Jayaram Reddy: +91 79819 55627',
+        'M. Harsha Vardhan (Culturals): +91 81437 67320',
+        'V. Wazid (Sports): +91 82474 32448',
+      ],
       color: 'from-purple-500 to-indigo-500'
     },
     {
       icon: Mail,
       title: 'Email Us',
-      details: ['info@mits.ac.in', 'freshersday@mits.ac.in'],
+      details: ['sac@mits.ac.in'],
       color: 'from-cyan-500 to-blue-500'
     }
   ];
@@ -215,7 +220,7 @@ const Contact = () => {
             </p>
             <div className="flex justify-center items-center space-x-4">
               <Phone className="w-6 h-6 text-pink-400 animate-pulse" />
-              <span className="text-2xl font-bold text-white">+91 8571234567</span>
+              <span className="text-xl font-bold text-white">+91 76708 22609 / +91 81437 67320</span>
             </div>
           </div>
         </div>

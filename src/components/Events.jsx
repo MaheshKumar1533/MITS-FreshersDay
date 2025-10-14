@@ -4,44 +4,100 @@ import { Music, Users, Award, Palette, Gamepad2, Zap, Trophy } from 'lucide-reac
 const Events = () => {
   const events = [
     {
-      icon: Music,
-      title: 'Vocal Showdown',
-      description: 'Unleash your inner rockstar! Showcase your vocal talents and mesmerize the audience with your melodious voice.',
+      icon: Users,
+      title: 'Tug of War',
+      description: 'Test your team strength and coordination in this classic battle of power! Compete in separate boys and girls categories.',
       registerLink: '#',
       color: 'from-pink-500 to-rose-500',
       bgGlow: 'pink-500/20'
     },
     {
-      icon: Users,
-      title: 'Dance Battle',
-      description: 'Move to the beat! Express yourself through electrifying dance moves and captivate everyone with your rhythm.',
+      icon: Gamepad2,
+      title: 'Chess',
+      description: 'Battle of minds! Showcase your strategic thinking and checkmate your opponents in this classic game of intellect.',
       registerLink: '#',
       color: 'from-purple-500 to-indigo-500',
       bgGlow: 'purple-500/20'
     },
     {
+      icon: Gamepad2,
+      title: 'Carroms',
+      description: 'Strike and pocket! Display your precision and skill in this popular indoor board game competition.',
+      registerLink: '#',
+      color: 'from-cyan-500 to-blue-500',
+      bgGlow: 'cyan-500/20'
+    },
+    {
       icon: Award,
-      title: 'Mr & Ms Fresher',
-      description: 'The ultimate crown awaits! Compete for the most prestigious title and become the royalty of the evening.',
+      title: 'Shotput',
+      description: 'Show your strength! Compete in this track and field event and see how far you can throw.',
+      registerLink: '#',
+      color: 'from-orange-500 to-red-500',
+      bgGlow: 'orange-500/20'
+    },
+    {
+      icon: Users,
+      title: 'Throw Ball',
+      description: 'Team spirit meets athleticism! Join the thrilling throw ball tournament and score big with your team.',
+      registerLink: '#',
+      color: 'from-green-500 to-emerald-500',
+      bgGlow: 'green-500/20'
+    },
+    {
+      icon: Award,
+      title: 'Cricket',
+      description: 'Unleash your cricketing prowess! Bat, bowl, and field your way to victory in the ultimate cricket showdown.',
+      registerLink: '#',
+      color: 'from-blue-500 to-indigo-500',
+      bgGlow: 'blue-500/20'
+    },
+    {
+      icon: Palette,
+      title: 'Drama Delites',
+      description: 'Lights, camera, action! Bring stories to life with your dramatic performances and theatrical flair.',
+      registerLink: '#',
+      color: 'from-purple-500 to-pink-500',
+      bgGlow: 'purple-500/20'
+    },
+    {
+      icon: Award,
+      title: 'Fashion Fanatics',
+      description: 'Walk the ramp with confidence! Showcase your style, personality, and fashion sense in this glamorous event.',
+      registerLink: '#',
+      color: 'from-pink-500 to-purple-500',
+      bgGlow: 'pink-500/20'
+    },
+    {
+      icon: Music,
+      title: 'Beat Bash',
+      description: 'Feel the rhythm! Show off your electrifying dance moves and groove to the beat in this ultimate dance battle.',
+      registerLink: '#',
+      color: 'from-red-500 to-orange-500',
+      bgGlow: 'red-500/20'
+    },
+    {
+      icon: Music,
+      title: 'Melody Madness',
+      description: 'Hit the high notes! Showcase your vocal talents and mesmerize the audience with your melodious voice.',
+      registerLink: '#',
+      color: 'from-cyan-500 to-teal-500',
+      bgGlow: 'cyan-500/20'
+    },
+    {
+      icon: Palette,
+      title: 'Artistry',
+      description: 'Unleash your creativity! Paint, sketch, and create stunning visual masterpieces in this artistic competition.',
       registerLink: '#',
       color: 'from-yellow-500 to-orange-500',
       bgGlow: 'yellow-500/20'
     },
     {
       icon: Palette,
-      title: 'Cultural Fiesta',
-      description: 'Celebrate diversity! Participate in vibrant cultural performances and showcase your rich heritage.',
+      title: 'Insta Flick',
+      description: 'Capture the moment! Show your photography skills and create Instagram-worthy shots that tell a story.',
       registerLink: '#',
-      color: 'from-green-500 to-emerald-500',
-      bgGlow: 'green-500/20'
-    },
-    {
-      icon: Gamepad2,
-      title: 'Tech Challenge Arena',
-      description: 'Battle of minds! Engage in exciting technical challenges and brain-teasing activities that push your limits.',
-      registerLink: '#',
-      color: 'from-cyan-500 to-blue-500',
-      bgGlow: 'cyan-500/20'
+      color: 'from-indigo-500 to-purple-500',
+      bgGlow: 'indigo-500/20'
     }
   ];
 
@@ -69,7 +125,7 @@ const Events = () => {
             and create <span className="text-pink-400 font-semibold">unforgettable moments</span>.
           </p>
         </div>        {/* Events Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
           {events.map((event, index) => (
             <div
               key={index}

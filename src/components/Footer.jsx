@@ -19,11 +19,11 @@ const Footer = () => {
     {
       title: 'Epic Events',
       links: [
-        { name: 'Vocal Showdown', href: '#events' },
-        { name: 'Dance Battle', href: '#events' },
-        { name: 'Mr & Ms Fresher', href: '#events' },
-        { name: 'Cultural Fiesta', href: '#events' },
-        { name: 'Tech Challenge', href: '#events' }
+        { name: 'Tug of War', href: '#events' },
+        { name: 'Cricket & Sports', href: '#events' },
+        { name: 'Drama Delites', href: '#events' },
+        { name: 'Fashion Fanatics', href: '#events' },
+        { name: 'Beat Bash & Melody', href: '#events' }
       ]
     },
     {
@@ -31,8 +31,8 @@ const Footer = () => {
       content: [
         'Angallu, Madanapalle-517325',
         'Annamayya District, AP, India',
-        'info@mits.ac.in',
-        '+91 8571234567'
+        'sac@mits.ac.in',
+        'www.mits.ac.in'
       ]
     }
   ];

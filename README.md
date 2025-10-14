@@ -1,16 +1,53 @@
-# React + Vite
+# MITS Freshers Day 2K25
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Official website for Madanapalle Institute of Technology & Science Freshers Day 2025 celebration.
 
-Currently, two official plugins are available:
+## About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is the official event website for MITS Freshers Day 2K25, featuring 12 exciting events including sports tournaments, cultural performances, and artistic competitions.
 
-## React Compiler
+## Events
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Sports**: Tug of War, Cricket, Throw Ball, Shotput, Chess, Carroms
+- **Cultural**: Drama Delites, Fashion Fanatics, Beat Bash, Melody Madness
+- **Creative Arts**: Artistry, Insta Flick
 
-## Expanding the ESLint configuration
+## Event Details
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Venue**: Open Auditorium, Opp. Shiva Block, MITS Campus
+- **Date**: November 7, 2025
+- **Location**: Madanapalle, Annamayya District, Andhra Pradesh
+
+## Event Coordinators
+
+- V. Harshavardhan (Culturals): +91 76708 22609
+- M. Harsha Vardhan (Sports): +91 81437 67320
+- V. Wazid: +91 82474 32448
+- P. Jayaram Reddy: +91 79819 55627
+
+## Tech Stack
+
+- React 19
+- Vite
+- Tailwind CSS 4
+- Lucide React Icons
+
+## Development
+
+```bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+## License
+
+© 2025 MITS Madanapalle. All rights reserved.
