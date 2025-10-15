@@ -11,20 +11,19 @@ const Footer = () => {
       links: [
         { name: 'Home', href: '#home' },
         { name: 'About Us', href: '#about' },
-        { name: 'Gallery', href: '#gallery' },
         { name: 'Events', href: '#events' },
         { name: 'Contact', href: '#contact' }
       ]
     },
-    {
-      title: 'Epic Events',
-      links: [
-        { name: 'Cricket & Sports', href: '#events' },
-        { name: 'Drama Delites', href: '#events' },
-        { name: 'Fashion Fanatics', href: '#events' },
-        { name: 'Beat Bash & Melody', href: '#events' }
-      ]
-    },
+    // {
+    //   title: 'Epic Events',
+    //   links: [
+    //     { name: 'Cricket & Sports', href: '#events' },
+    //     { name: 'Drama Delites', href: '#events' },
+    //     { name: 'Fashion Fanatics', href: '#events' },
+    //     { name: 'Beat Bash & Melody', href: '#events' }
+    //   ]
+    // },
     {
       title: 'Connect With Us',
       content: [
@@ -133,23 +132,20 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
-            <div className="flex items-center space-x-2 text-gray-400">
-              <span>&copy; {currentYear} MITS Madanapalle. All rights reserved.</span>
-            </div>
 
-            <div className="flex items-center space-x-2 text-gray-400">
+            {/* <div className="flex items-center space-x-2 text-gray-400">
               <span>Made with</span>
               <Heart className="w-4 h-4 text-pink-400 animate-pulse" />
               <span>for</span>
               <span className="font-bold bg-gradient-to-r from-pink-400 to-cyan-400 bg-clip-text text-transparent">
-                Freshers 2K25
+                Freshers 2025
               </span>
               <Sparkles className="w-4 h-4 text-yellow-400 animate-bounce" />
-            </div>
+            </div> */}
           </div>
 
           {/* Fun Message */}
-          <div className="mt-8 text-center">
+          {/* <div className="mt-8 text-center">
             <div className="glass-effect rounded-2xl p-6 border border-pink-500/20 max-w-2xl mx-auto">
               <p className="text-gray-300 mb-2">
                 🎉 Ready to make history? The most epic celebration awaits! 🎉
@@ -166,7 +162,7 @@ const Footer = () => {
                 ))}
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

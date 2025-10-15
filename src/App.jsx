@@ -45,7 +45,6 @@ function App() {
         <Navbar />
         <Hero onPosterClick={() => setShowPoster(true)} />
         <About />
-        <Gallery />
         <Events />
         <Contact />
         <Footer />

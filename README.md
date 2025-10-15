@@ -1,10 +1,10 @@
-# MITS Freshers Day 2K25
+# MITS Freshers Day 2025
 
 Official website for Madanapalle Institute of Technology & Science Freshers Day 2025 celebration.
 
 ## About
 
-This is the official event website for MITS Freshers Day 2K25, featuring 12 exciting events including sports tournaments, cultural performances, and artistic competitions.
+This is the official event website for MITS Freshers Day 2025, featuring 12 exciting events including sports tournaments, cultural performances, and artistic competitions.
 
 ## Events
 

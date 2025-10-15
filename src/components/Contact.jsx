@@ -1,25 +1,7 @@
-import React, { useState } from 'react';
-import { MapPin, Phone, Mail, Facebook, Instagram, Youtube, Linkedin, MessageCircle, Send, User } from 'lucide-react';
+import React from 'react';
+import { MapPin, Phone, Mail, Facebook, Instagram, Youtube, Linkedin, MessageCircle } from 'lucide-react';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-  };
 
   const contactInfo = [
     {
@@ -115,6 +97,11 @@ const Contact = () => {
               </div>
             ))}
 
+            
+          </div>
+
+          {/* Contact Form & Map */}
+          <div className="space-y-8">
             {/* Social Media */}
             <div className="glass-effect rounded-2xl p-6 border border-white/10">
               <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
@@ -132,61 +119,6 @@ const Contact = () => {
                   </a>
                 ))}
               </div>
-            </div>
-          </div>
-
-          {/* Contact Form & Map */}
-          <div className="space-y-8">
-            {/* Contact Form */}
-            <div className="glass-effect rounded-2xl p-6 border border-white/10">
-              <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
-                <Send className="w-6 h-6 text-pink-400" />
-                Send Us a Message
-              </h3>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="relative">
-                  <User className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="Your Name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    className="w-full pl-12 pr-4 py-3 bg-gray-800/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:border-pink-500 focus:outline-none transition-colors duration-300"
-                    required
-                  />
-                </div>
-                <div className="relative">
-                  <Mail className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Your Email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="w-full pl-12 pr-4 py-3 bg-gray-800/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:border-pink-500 focus:outline-none transition-colors duration-300"
-                    required
-                  />
-                </div>
-                <div className="relative">
-                  <MessageCircle className="absolute left-4 top-4 w-5 h-5 text-gray-400" />
-                  <textarea
-                    name="message"
-                    placeholder="Your Message"
-                    rows="4"
-                    value={formData.message}
-                    onChange={handleChange}
-                    className="w-full pl-12 pr-4 py-3 bg-gray-800/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:border-pink-500 focus:outline-none transition-colors duration-300 resize-none"
-                    required
-                  ></textarea>
-                </div>
-                <button
-                  type="submit"
-                  className="w-full px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-semibold rounded-lg hover:from-pink-600 hover:to-purple-700 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-pink-500/25"
-                >
-                  Send Message 🚀
-                </button>
-              </form>
             </div>
 
             {/* Map */}
@@ -210,7 +142,7 @@ const Contact = () => {
         </div>
 
         {/* Emergency Contact */}
-        <div className="mt-16 text-center">
+        {/* <div className="mt-16 text-center">
           <div className="glass-effect rounded-2xl p-8 border border-pink-500/20 max-w-4xl mx-auto">
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
               🚨 <span className="text-transparent bg-gradient-to-r from-pink-400 to-cyan-400 bg-clip-text">Emergency Contact</span> 🚨
@@ -223,7 +155,7 @@ const Contact = () => {
               <span className="text-xl font-bold text-white">+91 76708 22609 / +91 81437 67320</span>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

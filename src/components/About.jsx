@@ -17,13 +17,13 @@ const About = () => {
           </div>
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 font-['Orbitron']">
             <span className="bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent animate-neon-pulse">
-              About Freshers Day 2K25
+              About Freshers Day 2025
             </span>
           </h2>
           <div className="w-16 sm:w-20 md:w-24 h-1 bg-gradient-to-r from-pink-500 to-cyan-500 mx-auto mb-6 sm:mb-8"></div>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 max-w-2xl sm:max-w-3xl md:max-w-4xl mx-auto leading-relaxed px-4">
             Get ready for the most <span className="text-pink-400 font-semibold">spectacular celebration</span> of the year!
-            MITS Freshers Day 2K25 brings you an exciting lineup of <span className="text-cyan-400 font-semibold">12 amazing events</span>
+            MITS Freshers Day 2025 brings you an exciting lineup of <span className="text-cyan-400 font-semibold">12 amazing events</span>
             – from sports tournaments to cultural performances, fashion shows to artistic competitions. Welcome to your new family!
           </p>
         </div>

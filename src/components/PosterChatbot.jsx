@@ -35,7 +35,7 @@ const PosterChatbot = ({ show, onClose }) => {
           <div className="relative overflow-hidden">
             <img
               src="https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=800"
-              alt="Freshers Day 2K25 Poster"
+              alt="Freshers Day 2025 Poster"
               className="w-full h-full object-cover"
             />
 
@@ -66,7 +66,7 @@ const PosterChatbot = ({ show, onClose }) => {
                     MITS Freshers Day
                   </span>
                 </h2>
-                <p className="text-2xl md:text-3xl font-bold text-white neon-text">2K25</p>
+                <p className="text-2xl md:text-3xl font-bold text-white neon-text">2025</p>
 
                 {/* Event Details */}
                 <div className="flex flex-wrap justify-center gap-4 mt-4">

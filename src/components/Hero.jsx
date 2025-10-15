@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FileImage, Sparkles, Calendar, MapPin } from 'lucide-react';
+import Countdown from './Countdown';
 
 const Hero = ({ onPosterClick }) => {
   const images = [
@@ -72,7 +73,7 @@ const Hero = ({ onPosterClick }) => {
             MITS
           </span>
           <span className="block text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mt-2 text-white neon-text">
-            Freshers Day 2K25
+            Freshers Day 2025
           </span>
         </h1>
 
@@ -88,12 +89,12 @@ const Hero = ({ onPosterClick }) => {
           </div>
         </div>
 
-        {/* Description */}
-        <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-8 sm:mb-12 max-w-2xl sm:max-w-3xl mx-auto leading-relaxed px-4">
-          Get ready for the most electrifying celebration of the year! Join us for an unforgettable night
-          of music, dance, and pure excitement as we welcome our new students with style.
-        </p>
+        {/* Countdown timer (days/hours/minutes/seconds) */}
+        <div className="flex justify-center mb-6">
+          <Countdown targetDate="2025-11-07T00:00:00" />
+        </div>
 
+        {/* Description */}
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
           <button
@@ -104,15 +105,39 @@ const Hero = ({ onPosterClick }) => {
             <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </button>
 
-          <button
+          {/* <button
             onClick={onPosterClick}
             className="group flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 glass-effect border border-pink-500/50 text-white font-semibold text-sm sm:text-base rounded-full hover:border-pink-400 hover:bg-pink-500/10 transition-all duration-300"
             title="View Event Poster"
           >
             <FileImage className="w-4 h-4 sm:w-5 sm:h-5 text-pink-400 group-hover:animate-pulse" />
             View Poster
-          </button>
+          </button> */}
         </div>
+        {/* <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-8 sm:mb-12 max-w-2xl sm:max-w-3xl mx-auto leading-relaxed px-4">
+          Get ready for the most electrifying celebration of the year! Join us for an unforgettable night
+          of music, dance, and pure excitement as we welcome our new students with style.
+        </p> */}
+
+
+        {/* Explicit registration buttons for Sports & Culturals */}
+        {/* <div className="mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
+          <a
+            href="https://forms.gle/ncxbMBD3M5hMrgKJA"
+            className="inline-flex items-center gap-2 px-5 py-3 bg-gradient-to-r from-green-400 to-teal-400 text-gray-900 font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-200"
+          >
+            <Sparkles className="w-4 h-4 text-white" />
+            Register (Sports)
+          </a>
+
+          <a
+            href="https://forms.gle/gwJSGGzKAZZXpjMo9"
+            className="inline-flex items-center gap-2 px-5 py-3 bg-gradient-to-r from-pink-400 to-purple-400 text-gray-900 font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-200"
+          >
+            <Sparkles className="w-4 h-4 text-white" />
+            Register (Culturals)
+          </a>
+        </div> */}
       </div>
 
       {/* Slider Indicators */}

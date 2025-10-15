@@ -6,6 +6,7 @@ const Events = () => {
     {
       icon: Users,
       title: 'Tug of War',
+      category: 'sports',
       description: 'Test your team strength and coordination in this classic battle of power! Compete in separate boys and girls categories.',
       registerLink: 'https://forms.gle/ncxbMBD3M5hMrgKJA',
       color: 'from-pink-500 to-rose-500',
@@ -14,6 +15,7 @@ const Events = () => {
     {
       icon: Gamepad2,
       title: 'Chess',
+      category: 'sports',
       description: 'Battle of minds! Showcase your strategic thinking and checkmate your opponents in this classic game of intellect.',
       registerLink: 'https://forms.gle/ncxbMBD3M5hMrgKJA',
       color: 'from-purple-500 to-indigo-500',
@@ -22,6 +24,7 @@ const Events = () => {
     {
       icon: Gamepad2,
       title: 'Carroms',
+      category: 'sports',
       description: 'Strike and pocket! Display your precision and skill in this popular indoor board game competition.',
       registerLink: 'https://forms.gle/ncxbMBD3M5hMrgKJA',
       color: 'from-cyan-500 to-blue-500',
@@ -30,6 +33,7 @@ const Events = () => {
     {
       icon: Award,
       title: 'Shotput',
+      category: 'sports',
       description: 'Show your strength! Compete in this track and field event and see how far you can throw.',
       registerLink: 'https://forms.gle/ncxbMBD3M5hMrgKJA',
       color: 'from-orange-500 to-red-500',
@@ -38,6 +42,7 @@ const Events = () => {
     {
       icon: Users,
       title: 'Throw Ball',
+      category: 'sports',
       description: 'Team spirit meets athleticism! Join the thrilling throw ball tournament and score big with your team.',
       registerLink: 'https://forms.gle/ncxbMBD3M5hMrgKJA',
       color: 'from-green-500 to-emerald-500',
@@ -46,6 +51,7 @@ const Events = () => {
     {
       icon: Award,
       title: 'Cricket',
+      category: 'sports',
       description: 'Unleash your cricketing prowess! Bat, bowl, and field your way to victory in the ultimate cricket showdown.',
       registerLink: 'https://forms.gle/ncxbMBD3M5hMrgKJA',
       color: 'from-blue-500 to-indigo-500',
@@ -54,6 +60,7 @@ const Events = () => {
     {
       icon: Palette,
       title: 'Drama Delights',
+      category: 'cultural',
       description: 'Lights, camera, action! Bring stories to life with your dramatic performances and theatrical flair.',
       registerLink: 'https://forms.gle/gwJSGGzKAZZXpjMo9',
       color: 'from-purple-500 to-pink-500',
@@ -62,6 +69,7 @@ const Events = () => {
     {
       icon: Award,
       title: 'Fashion Fanatics',
+      category: 'cultural',
       description: 'Walk the ramp with confidence! Showcase your style, personality, and fashion sense in this glamorous event.',
       registerLink: 'https://forms.gle/gwJSGGzKAZZXpjMo9',
       color: 'from-pink-500 to-purple-500',
@@ -70,6 +78,7 @@ const Events = () => {
     {
       icon: Music,
       title: 'Beat Bash',
+      category: 'cultural',
       description: 'Feel the rhythm! Show off your electrifying dance moves and groove to the beat in this ultimate dance battle.',
       registerLink: 'https://forms.gle/gwJSGGzKAZZXpjMo9',
       color: 'from-red-500 to-orange-500',
@@ -78,6 +87,7 @@ const Events = () => {
     {
       icon: Music,
       title: 'Melody Madness',
+      category: 'cultural',
       description: 'Hit the high notes! Showcase your vocal talents and mesmerize the audience with your melodious voice.',
       registerLink: 'https://forms.gle/gwJSGGzKAZZXpjMo9',
       color: 'from-cyan-500 to-teal-500',
@@ -86,6 +96,7 @@ const Events = () => {
     {
       icon: Palette,
       title: 'Artistry',
+      category: 'cultural',
       description: 'Unleash your creativity! Paint, sketch, and create stunning visual masterpieces in this artistic competition.',
       registerLink: 'https://forms.gle/gwJSGGzKAZZXpjMo9',
       color: 'from-yellow-500 to-orange-500',
@@ -94,12 +105,17 @@ const Events = () => {
     {
       icon: Palette,
       title: 'Insta Flick',
+      category: 'cultural',
       description: 'Capture the moment! Show your photography skills and create Instagram-worthy shots that tell a story.',
       registerLink: 'https://forms.gle/gwJSGGzKAZZXpjMo9',
       color: 'from-indigo-500 to-purple-500',
       bgGlow: 'indigo-500/20'
     }
   ];
+
+  // Split events by category for two lists
+  const culturalEvents = events.filter((e) => e.category === 'cultural');
+  const sportsEvents = events.filter((e) => e.category === 'sports');
 
   return (
     <section id="events" className="relative section-padding overflow-hidden">
@@ -125,51 +141,78 @@ const Events = () => {
             and create <span className="text-pink-400 font-semibold">unforgettable moments</span>.
           </p>
         </div>        {/* Events Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
-          {events.map((event, index) => (
-            <div
-              key={index}
-              className="group relative glass-effect rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 border border-white/10 hover:border-pink-500/30 transition-all duration-500 hover:scale-105 animate-float"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              {/* Glowing Background */}
-              <div className={`absolute inset-0 bg-${event.bgGlow} rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
-
-              {/* Icon with Neon Effect */}
-              <div className={`relative z-10 w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-r ${event.color} p-0.5 group-hover:animate-pulse`}>
-                <div className="w-full h-full bg-gray-900 rounded-full flex items-center justify-center">
-                  <event.icon className="w-10 h-10 text-white group-hover:text-pink-400 transition-colors duration-300" />
-                </div>
-              </div>
-
-              {/* Content */}
-              <div className="relative z-10 text-center">
-                <h3 className="text-xl font-bold text-white mb-4 group-hover:text-pink-400 transition-colors duration-300">
-                  {event.title}
-                </h3>
-                <p className="text-gray-400 leading-relaxed mb-6 group-hover:text-gray-300 transition-colors duration-300">
-                  {event.description}
-                </p>
-
-                {/* Register Button */}
-                <a
-                  href={event.registerLink}
-                  className={`inline-block px-6 py-3 bg-gradient-to-r ${event.color} text-white font-semibold rounded-full hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-pink-500/25 relative overflow-hidden group`}
-                >
-                  <span className="relative z-10 flex items-center gap-2">
-                    <Zap className="w-4 h-4" />
-                    Register Now
-                  </span>
-                  <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                </a>
-              </div>
-
-              {/* Animated Border */}
-              <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
-                <div className={`absolute inset-0 rounded-2xl bg-gradient-to-r ${event.color} opacity-20 blur-xl`}></div>
-              </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {/* Sports List */}
+          <div className="space-y-6">
+            <div className="flex items-center justify-between">
+              <h3 className="text-2xl font-bold text-white">Sports</h3>
+              <a
+                href="https://forms.gle/ncxbMBD3M5hMrgKJA"
+                className="inline-flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-green-400 to-teal-400 text-gray-900 font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-200"
+              >
+                <Zap className="w-4 h-4" />
+                Register for Sports
+              </a>
             </div>
-          ))}
+
+            <div className="grid grid-cols-1 gap-4">
+              {sportsEvents.map((event, index) => (
+                <div
+                  key={index}
+                  className="group relative glass-effect rounded-xl p-4 border border-white/10 hover:border-pink-500/30 transition-all duration-500"
+                  style={{ animationDelay: `${index * 0.05}s` }}
+                >
+                  <div className="flex items-start space-x-4">
+                    <div className={`w-14 h-14 rounded-full bg-gradient-to-r ${event.color} p-0.5 flex-shrink-0`}> 
+                      <div className="w-full h-full bg-gray-900 rounded-full flex items-center justify-center">
+                        <event.icon className="w-6 h-6 text-white" />
+                      </div>
+                    </div>
+                    <div className="flex-1">
+                      <h4 className="text-lg font-bold text-white">{event.title}</h4>
+                      <p className="text-gray-400 text-sm mt-1">{event.description}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Culturals List */}
+          <div className="space-y-6">
+            <div className="flex items-center justify-between">
+              <h3 className="text-2xl font-bold text-white">Culturals</h3>
+              <a
+                href="https://forms.gle/gwJSGGzKAZZXpjMo9"
+                className="inline-flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-pink-400 to-purple-400 text-gray-900 font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-200"
+              >
+                <Zap className="w-4 h-4" />
+                Register for Culturals
+              </a>
+            </div>
+
+            <div className="grid grid-cols-1 gap-4">
+              {culturalEvents.map((event, index) => (
+                <div
+                  key={index}
+                  className="group relative glass-effect rounded-xl p-4 border border-white/10 hover:border-pink-500/30 transition-all duration-500"
+                  style={{ animationDelay: `${index * 0.05}s` }}
+                >
+                  <div className="flex items-start space-x-4">
+                    <div className={`w-14 h-14 rounded-full bg-gradient-to-r ${event.color} p-0.5 flex-shrink-0`}> 
+                      <div className="w-full h-full bg-gray-900 rounded-full flex items-center justify-center">
+                        <event.icon className="w-6 h-6 text-white" />
+                      </div>
+                    </div>
+                    <div className="flex-1">
+                      <h4 className="text-lg font-bold text-white">{event.title}</h4>
+                      <p className="text-gray-400 text-sm mt-1">{event.description}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
 
         {/* Prize Section */}

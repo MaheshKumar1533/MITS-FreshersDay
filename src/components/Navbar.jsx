@@ -36,7 +36,6 @@ const Navbar = () => {
             {[
               { href: '#home', label: 'Home' },
               { href: '#about', label: 'About Us' },
-              { href: '#gallery', label: 'Gallery' },
               { href: '#events', label: 'Events' },
               { href: '#contact', label: 'Contact Us' }
             ].map((item, index) => (
@@ -50,12 +49,7 @@ const Navbar = () => {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-pink-500 to-cyan-500 group-hover:w-full transition-all duration-300"></span>
               </a>
             ))}
-            <a
-              href="#register"
-              className="px-6 py-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-full font-semibold hover:from-pink-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-pink-500/25 animate-pulse"
-            >
-              Register
-            </a>
+            {/* Register button removed as requested */}
           </div>
 
           {/* Mobile menu button */}
@@ -76,7 +70,6 @@ const Navbar = () => {
               {[
                 { href: '#home', label: 'Home' },
                 { href: '#about', label: 'About Us' },
-                { href: '#gallery', label: 'Gallery' },
                 { href: '#events', label: 'Events' },
                 { href: '#contact', label: 'Contact Us' }
               ].map((item) => (
@@ -89,13 +82,7 @@ const Navbar = () => {
                   {item.label}
                 </a>
               ))}
-              <a
-                href="#register"
-                className="block w-full text-center px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-full font-semibold hover:from-pink-600 hover:to-purple-700 transition-all duration-300 mt-4"
-                onClick={() => setIsOpen(false)}
-              >
-                Register
-              </a>
+              {/* Register button removed from mobile menu as well */}
             </div>
           </div>
         )}

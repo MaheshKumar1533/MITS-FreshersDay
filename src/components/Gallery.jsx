@@ -72,9 +72,9 @@ const Gallery = () => {
           <div className="flex justify-center mb-6">
             <Camera className="w-12 h-12 text-pink-400 animate-pulse" />
           </div>
-          <h2 className="text-4xl md:text-6xl font-bold mb-6 font-['Orbitron']">
+            <h2 className="text-4xl md:text-6xl font-bold mb-6 font-['Orbitron']">
             <span className="bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent animate-neon-pulse">
-              Memory Lane
+              Gallery
             </span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-pink-500 to-cyan-500 mx-auto mb-8"></div>
