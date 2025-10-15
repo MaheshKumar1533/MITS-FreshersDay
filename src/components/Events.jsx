@@ -142,21 +142,23 @@ const Events = () => {
           </p>
         </div>        {/* Events Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* Sports List */}
-          <div className="space-y-6">
+          
+
+          {/* Culturals List */}
+          <div className="space-y-6 border border-purple-500/10 bg-purple-500/10 rounded-xl shadow-lg p-12">
             <div className="flex items-center justify-between">
-              <h3 className="text-2xl font-bold text-white">Sports</h3>
+              <h3 className="text-2xl font-bold text-white">Culturals</h3>
               <a
-                href="https://forms.gle/ncxbMBD3M5hMrgKJA"
-                className="inline-flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-green-400 to-teal-400 text-gray-900 font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-200"
+                href="https://forms.gle/gwJSGGzKAZZXpjMo9"
+                className="inline-flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-pink-400 to-purple-400 text-gray-900 font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-200"
               >
                 <Zap className="w-4 h-4" />
-                Register for Sports
+                Register here
               </a>
             </div>
 
             <div className="grid grid-cols-1 gap-4">
-              {sportsEvents.map((event, index) => (
+              {culturalEvents.map((event, index) => (
                 <div
                   key={index}
                   className="group relative glass-effect rounded-xl p-4 border border-white/10 hover:border-pink-500/30 transition-all duration-500"
@@ -178,21 +180,21 @@ const Events = () => {
             </div>
           </div>
 
-          {/* Culturals List */}
-          <div className="space-y-6">
+          {/* Sports List */}
+          <div className="space-y-6 border border-purple-500/10 bg-purple-500/10 rounded-xl shadow-lg p-12">
             <div className="flex items-center justify-between">
-              <h3 className="text-2xl font-bold text-white">Culturals</h3>
+              <h3 className="text-2xl font-bold text-white">Sports</h3>
               <a
-                href="https://forms.gle/gwJSGGzKAZZXpjMo9"
-                className="inline-flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-pink-400 to-purple-400 text-gray-900 font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-200"
+                href="https://forms.gle/ncxbMBD3M5hMrgKJA"
+                className="inline-flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-green-400 to-teal-400 text-gray-900 font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-200"
               >
                 <Zap className="w-4 h-4" />
-                Register for Culturals
+                Register here
               </a>
             </div>
 
             <div className="grid grid-cols-1 gap-4">
-              {culturalEvents.map((event, index) => (
+              {sportsEvents.map((event, index) => (
                 <div
                   key={index}
                   className="group relative glass-effect rounded-xl p-4 border border-white/10 hover:border-pink-500/30 transition-all duration-500"

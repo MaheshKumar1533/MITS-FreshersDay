@@ -69,9 +69,8 @@ const Footer = () => {
                 <img
                   src={logo}
                   alt="MITS Logo"
-                  className="h-12 w-12 rounded-full border-2 border-pink-400 shadow-lg animate-pulse"
+                  className="h-12 w-12 rounded-xl border-2 border-pink-400 shadow-lg"
                 />
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-pink-500/20 to-cyan-500/20"></div>
               </div>
               <div>
                 <h3 className="text-xl font-bold bg-gradient-to-r from-pink-400 to-cyan-400 bg-clip-text text-transparent">
@@ -127,42 +126,6 @@ const Footer = () => {
               )}
             </div>
           ))}
-        </div>
-
-        {/* Bottom Section */}
-        <div className="border-t border-gray-800 pt-8">
-          <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
-
-            {/* <div className="flex items-center space-x-2 text-gray-400">
-              <span>Made with</span>
-              <Heart className="w-4 h-4 text-pink-400 animate-pulse" />
-              <span>for</span>
-              <span className="font-bold bg-gradient-to-r from-pink-400 to-cyan-400 bg-clip-text text-transparent">
-                Freshers 2025
-              </span>
-              <Sparkles className="w-4 h-4 text-yellow-400 animate-bounce" />
-            </div> */}
-          </div>
-
-          {/* Fun Message */}
-          {/* <div className="mt-8 text-center">
-            <div className="glass-effect rounded-2xl p-6 border border-pink-500/20 max-w-2xl mx-auto">
-              <p className="text-gray-300 mb-2">
-                🎉 Ready to make history? The most epic celebration awaits! 🎉
-              </p>
-              <div className="text-2xl">
-                {['🌟', '🎊', '✨', '🎵', '🎭'].map((emoji, index) => (
-                  <span
-                    key={index}
-                    className="animate-bounce inline-block mx-1"
-                    style={{ animationDelay: `${index * 0.2}s` }}
-                  >
-                    {emoji}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </div> */}
         </div>
       </div>
     </footer>
