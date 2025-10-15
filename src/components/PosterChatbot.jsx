@@ -5,7 +5,6 @@ const PosterChatbot = ({ show, onClose }) => {
   if (!show) return null;
 
   const eventHighlights = [
-    { icon: '💪', text: 'Tug of War & Sports Events' },
     { icon: '🏏', text: 'Cricket, Throw Ball & Shotput' },
     { icon: '�', text: 'Drama Delites & Fashion Fanatics' },
     { icon: '�', text: 'Beat Bash & Melody Madness' },

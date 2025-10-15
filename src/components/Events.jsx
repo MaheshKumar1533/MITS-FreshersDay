@@ -7,7 +7,7 @@ const Events = () => {
       icon: Users,
       title: 'Tug of War',
       description: 'Test your team strength and coordination in this classic battle of power! Compete in separate boys and girls categories.',
-      registerLink: '#',
+      registerLink: 'https://forms.gle/ncxbMBD3M5hMrgKJA',
       color: 'from-pink-500 to-rose-500',
       bgGlow: 'pink-500/20'
     },
@@ -15,7 +15,7 @@ const Events = () => {
       icon: Gamepad2,
       title: 'Chess',
       description: 'Battle of minds! Showcase your strategic thinking and checkmate your opponents in this classic game of intellect.',
-      registerLink: '#',
+      registerLink: 'https://forms.gle/ncxbMBD3M5hMrgKJA',
       color: 'from-purple-500 to-indigo-500',
       bgGlow: 'purple-500/20'
     },
@@ -23,7 +23,7 @@ const Events = () => {
       icon: Gamepad2,
       title: 'Carroms',
       description: 'Strike and pocket! Display your precision and skill in this popular indoor board game competition.',
-      registerLink: '#',
+      registerLink: 'https://forms.gle/ncxbMBD3M5hMrgKJA',
       color: 'from-cyan-500 to-blue-500',
       bgGlow: 'cyan-500/20'
     },
@@ -31,7 +31,7 @@ const Events = () => {
       icon: Award,
       title: 'Shotput',
       description: 'Show your strength! Compete in this track and field event and see how far you can throw.',
-      registerLink: '#',
+      registerLink: 'https://forms.gle/ncxbMBD3M5hMrgKJA',
       color: 'from-orange-500 to-red-500',
       bgGlow: 'orange-500/20'
     },
@@ -39,7 +39,7 @@ const Events = () => {
       icon: Users,
       title: 'Throw Ball',
       description: 'Team spirit meets athleticism! Join the thrilling throw ball tournament and score big with your team.',
-      registerLink: '#',
+      registerLink: 'https://forms.gle/ncxbMBD3M5hMrgKJA',
       color: 'from-green-500 to-emerald-500',
       bgGlow: 'green-500/20'
     },
@@ -47,7 +47,7 @@ const Events = () => {
       icon: Award,
       title: 'Cricket',
       description: 'Unleash your cricketing prowess! Bat, bowl, and field your way to victory in the ultimate cricket showdown.',
-      registerLink: '#',
+      registerLink: 'https://forms.gle/ncxbMBD3M5hMrgKJA',
       color: 'from-blue-500 to-indigo-500',
       bgGlow: 'blue-500/20'
     },
@@ -55,7 +55,7 @@ const Events = () => {
       icon: Palette,
       title: 'Drama Delites',
       description: 'Lights, camera, action! Bring stories to life with your dramatic performances and theatrical flair.',
-      registerLink: '#',
+      registerLink: 'https://forms.gle/gwJSGGzKAZZXpjMo9',
       color: 'from-purple-500 to-pink-500',
       bgGlow: 'purple-500/20'
     },
@@ -63,7 +63,7 @@ const Events = () => {
       icon: Award,
       title: 'Fashion Fanatics',
       description: 'Walk the ramp with confidence! Showcase your style, personality, and fashion sense in this glamorous event.',
-      registerLink: '#',
+      registerLink: 'https://forms.gle/gwJSGGzKAZZXpjMo9',
       color: 'from-pink-500 to-purple-500',
       bgGlow: 'pink-500/20'
     },
@@ -71,7 +71,7 @@ const Events = () => {
       icon: Music,
       title: 'Beat Bash',
       description: 'Feel the rhythm! Show off your electrifying dance moves and groove to the beat in this ultimate dance battle.',
-      registerLink: '#',
+      registerLink: 'https://forms.gle/gwJSGGzKAZZXpjMo9',
       color: 'from-red-500 to-orange-500',
       bgGlow: 'red-500/20'
     },
@@ -79,7 +79,7 @@ const Events = () => {
       icon: Music,
       title: 'Melody Madness',
       description: 'Hit the high notes! Showcase your vocal talents and mesmerize the audience with your melodious voice.',
-      registerLink: '#',
+      registerLink: 'https://forms.gle/gwJSGGzKAZZXpjMo9',
       color: 'from-cyan-500 to-teal-500',
       bgGlow: 'cyan-500/20'
     },
@@ -87,7 +87,7 @@ const Events = () => {
       icon: Palette,
       title: 'Artistry',
       description: 'Unleash your creativity! Paint, sketch, and create stunning visual masterpieces in this artistic competition.',
-      registerLink: '#',
+      registerLink: 'https://forms.gle/gwJSGGzKAZZXpjMo9',
       color: 'from-yellow-500 to-orange-500',
       bgGlow: 'yellow-500/20'
     },
@@ -95,7 +95,7 @@ const Events = () => {
       icon: Palette,
       title: 'Insta Flick',
       description: 'Capture the moment! Show your photography skills and create Instagram-worthy shots that tell a story.',
-      registerLink: '#',
+      registerLink: 'https://forms.gle/gwJSGGzKAZZXpjMo9',
       color: 'from-indigo-500 to-purple-500',
       bgGlow: 'indigo-500/20'
     }

@@ -19,7 +19,6 @@ const Footer = () => {
     {
       title: 'Epic Events',
       links: [
-        { name: 'Tug of War', href: '#events' },
         { name: 'Cricket & Sports', href: '#events' },
         { name: 'Drama Delites', href: '#events' },
         { name: 'Fashion Fanatics', href: '#events' },

@@ -22,19 +22,9 @@ const Gallery = () => {
       category: 'Culture'
     },
     {
-      src: 'https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Mr & Ms Fresher Contest',
-      category: 'Competition'
-    },
-    {
       src: 'https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=800',
       title: 'Musical Evening',
       category: 'Music'
-    },
-    {
-      src: 'https://images.pexels.com/photos/2263410/pexels-photo-2263410.jpeg?auto=compress&cs=tinysrgb&w=800',
-      title: 'Group Celebrations',
-      category: 'Celebration'
     },
     {
       src: 'https://images.pexels.com/photos/976866/pexels-photo-976866.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -95,7 +85,7 @@ const Gallery = () => {
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
           {galleryImages.map((image, index) => (
             <div
               key={index}
