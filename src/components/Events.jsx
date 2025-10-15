@@ -53,7 +53,7 @@ const Events = () => {
     },
     {
       icon: Palette,
-      title: 'Drama Delites',
+      title: 'Drama Delights',
       description: 'Lights, camera, action! Bring stories to life with your dramatic performances and theatrical flair.',
       registerLink: 'https://forms.gle/gwJSGGzKAZZXpjMo9',
       color: 'from-purple-500 to-pink-500',
