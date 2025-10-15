@@ -81,7 +81,7 @@ const Hero = ({ onPosterClick }) => {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-8 text-sm sm:text-base md:text-lg">
           <div className="flex items-center gap-2 glass-effect px-3 sm:px-4 py-2 rounded-full">
             <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-cyan-400" />
-            <span className="text-white font-medium">November 7, 2025</span>
+            <span className="text-white font-medium">November 7<sup>th<sup/>, 2025</span>
           </div>
           <div className="flex items-center gap-2 glass-effect px-3 sm:px-4 py-2 rounded-full">
             <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-pink-400" />
