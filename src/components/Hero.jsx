@@ -69,10 +69,10 @@ const Hero = ({ onPosterClick }) => {
 
         {/* Main Title */}
         <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-6 animate-neon-pulse">
-          <span className="block font-['Orbitron'] bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
+          <span className="block font-['Orbitron'] bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent text-[100px]">
             MITS
           </span>
-          <p class="text-sky-400 text-[20px]">Deemed to be University</p>
+          <p class="text-sky-400 text-[22px]">Deemed to be University</p>
 
           <span className="block text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mt-2 text-white neon-text">
             Freshers Day 2025
@@ -98,12 +98,12 @@ const Hero = ({ onPosterClick }) => {
 
         {/* Description */}
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center space-y-3 sm:space-y-0 mb-15">
           <button
             onClick={scrollToEvents}
             className="group relative px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 text-white font-bold text-sm sm:text-base md:text-lg rounded-full overflow-hidden transition-all duration-300 hover:scale-105 neon-box"
           >
-            <span className="relative z-10">Explore the Events</span>
+            <span className="relative z-10 ">Explore the Events</span>
             <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </button>
 
@@ -143,7 +143,7 @@ const Hero = ({ onPosterClick }) => {
       </div>
 
       {/* Slider Indicators */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3 z-20">
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3  z-20">
         {images.map((_, index) => (
           <button
             key={index}
