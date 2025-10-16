@@ -72,6 +72,8 @@ const Hero = ({ onPosterClick }) => {
           <span className="block font-['Orbitron'] bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
             MITS
           </span>
+          <p class="text-sky-400 text-[20px]">Deemed to be University</p>
+
           <span className="block text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mt-2 text-white neon-text">
             Freshers Day 2025
           </span>
